@@ -1,0 +1,68 @@
+.register_container {
+  max-width: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    img {
+      width:  100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+  .email , .password , .login_btn{
+    display: flex;
+    justify-content: center;
+    margin:  40px 0;
+    width: 600px;
+    input,button {
+      width: 100%;
+      height: 64px;
+    }
+    input {
+      // border:1px solid #ccc;/*no*/
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding: 0 16px;
+      transition: background 0.3s ease-in-out;
+    }
+    input:focus {
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+
+    button {
+      margin-top: 100px;
+      background: #009dff;
+      border: none;
+      border-radius: 40px;/*no*/
+      color: white;
+      height: 80px;
+    }
+
+
+
+  }
+
+
+
+  .forget_password , .register_acount{
+    display: flex;
+
+    span{
+      color: #ccc;
+    }
+  }
+
+  .forget_password {
+    justify-content: flex-end;
+  }
+  .register_acount {
+    justify-content: flex-start;
+  }
+}
